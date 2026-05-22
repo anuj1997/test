@@ -36,21 +36,31 @@ p {
 }
 
 /* Styling the interactive button */
+/* Upgraded button with smooth transitions and subtle styling */
 button {
-    background-color: #38bdf8; /* Match our neon blue accent color */
-    color: #0f172a;            /* Dark text inside the light button */
+    background-color: #38bdf8;
+    color: #0f172a;
     border: none;
-    padding: 12px 24px;
+    padding: 14px 28px;
     font-size: 1rem;
     font-weight: bold;
-    border-radius: 8px;        /* Sleek rounded corners */
-    cursor: pointer;          /* Changes mouse cursor to a clicking hand */
-    transition: all 0.2s ease; /* Makes hover animations smooth */
+    border-radius: 8px;
+    cursor: pointer;
     margin-top: 15px;
+    position: relative;
+    /* Adding a super smooth 0.3-second transition to multiple properties */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* What happens when you hover your mouse over the button */
+/* Advanced Hover Effect: Smooth scale up, bright neon blue shadow glow */
 button:hover {
-    background-color: #0ea5e9; /* Slightly darker blue on hover */
-    transform: scale(1.05);    /* Tiny, satisfying pop-out zoom effect */
+    background-color: #0ea5e9;
+    transform: translateY(-3px) scale(1.03); /* Lifts the button slightly upward */
+    box-shadow: 0 0 20px #38bdf8, 0 0 40px rgba(56, 189, 248, 0.4); /* Dual layer neon glow */
+}
+
+/* Visual feedback when you physically click down on the mouse */
+button:active {
+    transform: translateY(-1px) scale(0.98); /* Snaps it back down satisfyingly */
+    box-shadow: 0 0 10px #38bdf8;
 }
