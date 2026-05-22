@@ -1,0 +1,36 @@
+/* This resets margins so your page spans edge-to-edge beautifully */
+body {
+    background-color: #0f172a; /* A gorgeous modern dark-mode slate blue */
+    color: #f8fafc;            /* Crisp off-white text for easy reading */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* This creates a clean, floating visual card container */
+.card {
+    background-color: #1e293b; /* Slightly lighter blue for contrast */
+    padding: 40px;
+    border-radius: 16px;       /* Smooth, rounded modern corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Soft shadow depth */
+    text-align: center;
+    max-width: 400px;
+    border: 1px solid #334155; /* Subtle border line */
+}
+
+/* Designing the main heading text */
+h1 {
+    color: #38bdf8;            /* Vibrant neon sky-blue accents */
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+/* Designing the paragraph description */
+p {
+    color: #94a3b8;            /* Smooth muted grey for descriptions */
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
