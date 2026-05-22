@@ -34,3 +34,23 @@ p {
     font-size: 1.1rem;
     line-height: 1.6;
 }
+
+/* Styling the interactive button */
+button {
+    background-color: #38bdf8; /* Match our neon blue accent color */
+    color: #0f172a;            /* Dark text inside the light button */
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;        /* Sleek rounded corners */
+    cursor: pointer;          /* Changes mouse cursor to a clicking hand */
+    transition: all 0.2s ease; /* Makes hover animations smooth */
+    margin-top: 15px;
+}
+
+/* What happens when you hover your mouse over the button */
+button:hover {
+    background-color: #0ea5e9; /* Slightly darker blue on hover */
+    transform: scale(1.05);    /* Tiny, satisfying pop-out zoom effect */
+}
